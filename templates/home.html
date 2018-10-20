@@ -1,48 +1,35 @@
-<<<<<<< HEAD
-<!doctype html>
-<head>
-	<title>Cocoa Website</title>
-</head>
-<body>
-{% if name %}
-	<p>Hello {{ name }}.</p>
-{% else %}
-	<p>Hello stranger.</p>
-{% endif %}
-</body>
-</html>
-=======
 <!DOCTYPE html>
-<html>
+<html  id="my-whole-page">
     <head>
         <meta charset="utf-8">
         {% block head %}
         <title>{% block title %}{% endblock %} The Countries I Travelled</title>
-        {% endlblock %}
-        <link rel="stylesheet" type="text/css" href="/../static/temporary.css">
+        {% endblock %}
+        <link rel="stylesheet" type="text/css" href="/../static/css/bulma.min.css">
     </head>
 
     <body>
-        <header>
-            <h1>The Countries I Travelled</h1>
-        </header>
+        <div class="column">
+            <div class="column is-8 is-offset-2 has-background-white-bis">
+                <header>
+                    <div  id="my-main-header"><h1 class="is-size-1 has-text-centered">The Countries I Travelled</h1></div>
+                </header>
 
-        <nav>
-            <ul>
-                <li><a href="/about">About</a></li>
-                <li><a href="/countries">Countries</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
+                <nav class="navbar columns is-multiline is-mobile has-text-centered has-background-grey-lighter">
+                    <a class="navbar-item column is-one-quorter" href="/about">About</a>
+                    <a class="navbar-item column is-one-half" href="/countries">
+                        <img src="/../static/img/logo.png" width="50em" heigth="50em">Countries</a>
+                    <a class="navbar-item column is-one-quorter" href="/contact">Contact</a>
+                </nav>
 
-        <main>
-            {% block content %}
-            {% endblock content%}
-        </main>
+                <main>
+                    {% block content %}
+                    {% endblock content%}
+                </main>
 
-            {% include 'footer.html' %}
-
+                    {% include 'footer.html' %}
+            </div>
+        </div>
     </body>
 
 </html>
->>>>>>> 821f709502a8485f66f07f035eb08646763dd98a

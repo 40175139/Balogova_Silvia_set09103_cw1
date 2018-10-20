@@ -4,24 +4,47 @@
     color: #006b5e;
 }
 
-#my-whole-page {
-    
+#my-main-navbar {
+    background-color: #006b5e;
+    color: #fcfbfa;
 }
 
 #Africa {
-    background-color: #ffe565;
-    padding: 10% 0% 10% 0%;
+    background-color: #ffe56559;
+    background-image: url("/../static/img/africa_desert.jpg");
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    
+    padding: 2em 0em 2em 0em;
     margin: 1.5em 0em 2em 0em;
 }
 
 #Asia {
-    background-color: #659b90;
-    padding: 10% 0% 10% 0%;
+    background-color: #006b5f86;
+    background-image: url("/../static/img/asia_beach.jpg");
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: rgb(32, 29, 68);
+    padding: 2em 0em 2em 0em;
     margin: 1.5em 0em 2em 0em;
 }
 
 #Europe {
     background-color: #c4fcf0;
-    padding: 10% 0% 10% 0%;
+    background-image: url("/../static/img/europe_nature.jpg");
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    padding: 2em 0em 2em 0em;
     margin: 1.5em 0em 2em 0em;
 }

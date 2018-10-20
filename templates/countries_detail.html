@@ -2,5 +2,11 @@
 {% block title %}Country - The countries I travelled{% endblock title %}
 
 {% block content %}
+<div>
     <h1>{{ country.name }}</h1>
+    <p>Continent {{ country.continent }}</p>
+    <p>Capital: :{{ country.capital }}</p>
+    <p>Population: {{ country.population }}</p>
+    <p>Area: {{ country.area }}</p>
+<div>
 {% endblock content %}

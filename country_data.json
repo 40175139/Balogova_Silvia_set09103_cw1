@@ -1,3 +1,5 @@
 [
+    {"name":"Morocco","continent":"Africa","capital":"Rabat","population":33337529,"area":446550.0},
+    {"name":"Indonesia","continent":"Asia","capital":"Jakarta","population":258705000,"area":1904569.0},
     {"name":"Bulgaria","continent":"Europe","capital":"Sofia","population":7153784,"area":110879.0}
 ]

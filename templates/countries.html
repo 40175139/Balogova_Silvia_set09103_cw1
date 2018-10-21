@@ -2,55 +2,17 @@
 {% block title %}Countries - The countries I travelled{% endblock title %}
 
 {% block content %}
-<div>
-    <h2 class="is-size-5">List of countries</h2>
-    <div class="has-text-centered">
-        {% for key, val in countries.items() %}
-            <div id="{{ key }}">
-                <h3 class="is-size-2">{{ key }}</h3>
-                <ul>
-                    {% for country in val %}
-                        <a href="/countries/{{ country.name }}">{{ country.name }}</a>
-                    {% endfor %}
-                </ul>
-            </div>
-        {% endfor %}
-        <!--
-        <div id="Africa">
-            <h3 class="is-size-2">Africa</h3>
-            <ul>
-                <a href="/countries/Morocco"><li>Morocco</li></a>
+<h2 class="is-size-5">List of countries</h2>
+<div class="has-text-centered">
+    {% for key, val in countries.items() %}
+        <div id="{{ key }}">
+            <h3 class="is-size-2">{{ key }}</h3>
+            <ul id="my-continents">
+                {% for country in val %}
+                    <li class="has-text-weight-semibold"><a href="/countries/{{ country.name }}">{{ country.name }}</a></li>
+                {% endfor %}
             </ul>
         </div>
-        <div id="Asia">
-            <h3 class="is-size-2">Asia</h3>
-            <ul>
-                <a href="/countries/China"><li>China</li></a>
-                <a href="/countries/Indonesia"><li>Indonesia</li></a>
-                <a href="/countries/Malaysia"><li>Malaysia</li></a>
-                <a href="/countries/Singapore"><li>Singapore</li></a>
-                <a href="/countries/Thailand"><li>Thailand</li></a>
-            </ul>
-        </div>
-        <div id="Europe">
-            <h3 class="is-size-2">Europe</h3>
-            <ul>
-                <a href="/countries/austria"><li>Austria</li></a>
-                <a href="/countries/Belgium"><li>Belgium</li></a>
-                <a href="/countries/Bulgaria"><li>Bulgaria</li></a>
-                <a href="/countries/Czechia"><li>Czechia</li></a>
-                <a href="/countries/Germany"><li>Germany</li></a>
-                <a href="/countries/Greece"><li>Greece</li></a>
-                <a href="/countries/Italy"><li>Italy</li></a>
-                <a href="/countries/Netherland"><li>Netherland</li></a>
-                <a href="/countries/Portugal"><li>Portugal</li></a>
-                <a href="/countries/Scotland"><li>Scotland</li></a>
-                <a href="/countries/Slovakia"><li>Slovakia</li></a>
-                <a href="/countries/Slovinia"><li>Slovinia</li></a>
-                <a href="/countries/United Kingdom"><li>United Kingdom</li></a>
-                <a href="/countries/Vatican"><li>Vatican</li></a>
-            </ul>
-        </div> -->
-    </div>
+    {% endfor %}
 </div>
 {% endblock content %}

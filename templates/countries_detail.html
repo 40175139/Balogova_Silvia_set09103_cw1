@@ -2,11 +2,28 @@
 {% block title %}Country - The countries I travelled{% endblock title %}
 
 {% block content %}
-<div>
-    <h1>{{ country.name }}</h1>
-    <p>Continent {{ country.continent }}</p>
-    <p>Capital: :{{ country.capital }}</p>
-    <p>Population: {{ country.population }}</p>
-    <p>Area: {{ country.area }}</p>
-<div>
+<table class="table">
+    <tbody>
+        <tr>
+            <td></td>
+            <td><h3 class="is-size-4">{{ country.name }}</h3></td>
+        </tr>
+    <tr>   
+        <td>Continent</td>
+        <td>{{ country.continent }}</td>
+    </tr>
+    <tr>
+        <td>Capital</td>
+        <td>{{ country.capital }}</td>
+    </tr>
+    <tr>
+        <td>Population</td>
+        <td>{{ country.population }}</td>
+    </tr>
+    <tr>
+        <td>Area</td>
+        <td>{{ country.area }}</td>
+    </tr>
+    </tbody>
+</table>
 {% endblock content %}

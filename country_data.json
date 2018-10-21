@@ -1,5 +1,22 @@
 [
     {"name":"Morocco","continent":"Africa","capital":"Rabat","population":33337529,"area":446550.0},
+    {"name":"China","continent":"Asia","capital":"Beijing","population":1377422166,"area":9640011.0},
     {"name":"Indonesia","continent":"Asia","capital":"Jakarta","population":258705000,"area":1904569.0},
-    {"name":"Bulgaria","continent":"Europe","capital":"Sofia","population":7153784,"area":110879.0}
+    {"name":"Malaysia","continent":"Asia","capital":"Kuala Lumpur","population":31405416,"area":330803.0},
+    {"name":"Singapore","continent":"Asia","capital":"Singapore","population":5535000,"area":710.0},
+    {"name":"Thailand","continent":"Asia","capital":"Bangkok","population":65327652,"area":513120.0},
+    {"name":"Austria","continent":"Europe","capital":"Vienna","population":8725931,"area":83871.0},
+    {"name":"Belgium","continent":"Europe","capital":"Brussels","population":11319511,"area":30528.0},
+    {"name":"Bulgaria","continent":"Europe","capital":"Sofia","population":7153784,"area":110879.0},
+    {"name":"Czech Republic","continent":"Europe","capital":"Prague","population":10558524,"area":78865.0},
+    {"name": "Germany","continent":"Europe","capital":"Berlin","population": 81770900,"area": 357114},
+    {"name":"Greece","continent":"Europe","capital":"Athens","population":10858018,"area":131990.0},
+    {"name":"Italy","continent":"Europe","capital":"Rome","population":60665551,"area":301336.0},
+    {"name":"Netherlands","continent":"Europe","capital":"Amsterdam","population":17019800,"area":41850.0},
+    {"name":"Portugal","continent":"Europe","capital":"Lisbon","population":10374822,"area":92090.0},
+    {"name":"Scotland","continent":"Europe","capital":"Edinburgh","population":5424800,"area":110879.0},
+    {"name":"Slovakia","continent":"Europe","capital":"Bratislava","population":5426252,"area":49037.0},
+    {"name":"Slovenia","continent":"Europe","capital":"Ljubljana","population":2064188,"area":20273.0},
+    {"name":"United Kingdom","continent":"Europe","capital":"London","population":65110000,"area":77933.0},
+    {"name":"Vatican City","continent":"Europe","capital":"Rome","population":801,"area":0.44}
 ]

@@ -6,19 +6,21 @@
         <title>{% block title %}{% endblock %} The Countries I Travelled</title>
         {% endblock %}
         <link rel="stylesheet" type="text/css" href="/../static/css/bulma.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     </head>
 
     <body>
         <div class="column">
             <div class="column is-8 is-offset-2 has-background-white-bis">
                 <header>
-                    <div  id="my-main-header"><h1 class="is-size-1 has-text-centered">The Countries I Travelled</h1></div>
+                    <div  id="my-main-header">
+                        <h1 class="is-size-1 has-text-centered">The Countries I Travelled</h1>
+                    </div>
                 </header>
 
                 <nav class="navbar columns is-multiline is-mobile has-text-centered" id="my-main-navbar">
                     <a class="navbar-item column is-one-quorter" href="/about" id="my-main-navbar">About</a>
-                    <a class="navbar-item column is-one-half" href="/countries" id="my-main-navbar">
-                        <img src="/../static/img/logo.png" width="50em" heigth="50em">Countries</a>
+                    <a class="navbar-item column is-one-half" href="/countries" id="my-main-navbar">Countries</a>
                     <a class="navbar-item column is-one-quorter" href="/contact" id="my-main-navbar">Contact</a>
                 </nav>
 

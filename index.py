@@ -31,8 +31,7 @@ def country_detail(name):
 	for country in country_list:
 		if country["name"].lower() == name.lower():
 			return render_template('countries_detail.html', country=country)
-	return "Not loading country detail."
-	#abort(404)
+	abort(404)
 
 
 @app.errorhandler(404)

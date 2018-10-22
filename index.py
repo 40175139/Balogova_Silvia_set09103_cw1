@@ -8,7 +8,6 @@ json_file = open("country_data.json").read()
 country_list = json.loads(json_file)
 
 
-
 @app.route("/")
 @app.route("/home/")
 @app.route("/about/")
@@ -16,6 +15,7 @@ def home(name=None):
 	return render_template('about.html', name=name)
 
 @app.route("/countries/")
+@app.route("/country/")
 def countries():
 	countries = sort_by_continent(country_list)
 	return render_template('countries.html', countries=countries)
@@ -27,6 +27,7 @@ def contact():
 
 # The dictionary of countries
 @app.route("/countries/<name>")
+@app.route("/country/<name>")
 def country_detail(name):
 	for country in country_list:
 		if country["name"].lower() == name.lower():

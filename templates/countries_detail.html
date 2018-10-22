@@ -2,7 +2,7 @@
 {% block title %}Country - The countries I travelled{% endblock title %}
 
 {% block content %}
-<table class="table">
+<table class="table" id="my-country-table">
     <tbody>
         <tr>
             <td></td>
@@ -22,7 +22,7 @@
     </tr>
     <tr>
         <td>Area</td>
-        <td>{{ country.area }}</td>
+        <td>{{ country.area }} m<sup>2</sup></td>
     </tr>
     </tbody>
 </table>

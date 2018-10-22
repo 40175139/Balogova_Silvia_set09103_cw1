@@ -2,14 +2,13 @@
 {% block title %}Countries - The countries I travelled{% endblock title %}
 
 {% block content %}
-<h2 class="is-size-5">List of countries</h2>
 <div class="has-text-centered">
     {% for key, val in countries.items() %}
         <div id="{{ key }}">
-            <h3 class="is-size-2">{{ key }}</h3>
+            <h2 class="is-size-2">{{ key }}</h2>
             <ul id="my-continents">
                 {% for country in val %}
-                    <li class="has-text-weight-semibold"><a href="/countries/{{ country.name }}">{{ country.name }}</a></li>
+                    <a href="/countries/{{ country.name }}"><li class="has-text-weight-semibold">{{ country.name }}</li></a>
                 {% endfor %}
             </ul>
         </div>
